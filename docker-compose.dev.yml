@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: backend/Dockerfile
+    volumes:
+      - ./backend:/usr/src/app:delegated
+      - /usr/src/app/node_modules # Prevents overwriting node_modules
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=development
+      - MONGO_URI=${MONGO_URI}
+    command: npm run dev
+    depends_on:
+      - mongo # Ensure MongoDB starts before the backend
+
+
+  mongo:
+      image: mongo:6
+      restart: unless-stopped # Automatically restart unless stopped manually
+      volumes:
+        - mongo-data:/data/db # Persist data in a named volume
+      ports:
+        - "27017:27017"
+
+volumes:
+  mongo-data:
