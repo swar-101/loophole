@@ -1,0 +1,49 @@
+# ----------------------------------
+# Node package managers (root level)
+# ----------------------------------
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# ----------------------------------
+# Environment / secrets
+# ----------------------------------
+.env
+.env.local
+.env.*.local
+
+# ----------------------------------
+# Logs
+# ----------------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# ----------------------------------
+# OS / Editor files
+# ----------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# ----------------------------------
+# Docker
+# ----------------------------------
+docker-compose.override.yml
+*.tar
+
+# ----------------------------------
+# Docs / misc build artifacts
+# ----------------------------------
+docs/*.html
+docs/*.pdf
