@@ -1,12 +1,32 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- `pages/` Screens of your app (e.g., Problems.jsx, ProblemDetails.jsx)
+- `components/` Reusable UI parts (e.g., ProblemCard.jsx, ProblemForm.jsx)
+- `services/` API calls to the backend (e.g., `problemsService.js`)
+- `store/` If you later add Redux/Zustand/Context for state.
+- `hooks/` Custom hooks like `useProblems()`.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Feature: Thinking space
 
-## Expanding the ESLint configuration
+The page has 4 things: 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Problem Title
+2. Left Pane : Code
+3. Right Pane : Thinking / Explanation 
+4. A toggle : Whiteboard <> Code
+
+Mode A: Plain textarea
+This is where solving happens
+- Plain text area 
+- No syntax highlighting 
+- No formatting pressure 
+- Fast typing 
+- Messy allowed 
+
+Mode B: Code Mode
+This is for after clarity 
+- Syntax highlighting ON
+- Readable 
+- Calm 
+- Teaching-ready
+
