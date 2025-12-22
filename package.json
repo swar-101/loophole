@@ -1,9 +1,1 @@
-{"scripts" :  {
-  "start:ui" : "npm start --prefix ui",
-  "start:backed": "npm run dev --prefix backend",
-  "dev": "concurrently \"npm run start:ui\" \"npm run start:backed\""},
-
-  "devDependencies": {
-    "concurrently": "^9.0.0"
-  }
-}
+{"scripts":{"start:ui":"npm start --prefix ui","start:backed":"npm run dev --prefix backend","dev":"concurrently \"npm run start:ui\" \"npm run start:backed\""},"devDependencies":{"concurrently":"^9.0.0"},"dependencies":{"better-sqlite3":"^12.2.0"}}
