@@ -4,6 +4,7 @@
 * Used for understanding, not testing.
 * */
 export interface ProblemExample {
+    id: number;
     input: string;
     output: string;
 
